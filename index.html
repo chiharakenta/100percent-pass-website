@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>合格立100%大学</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>絶対合格立100%大学<br />合否判定サイト</h1>
+        <form id="examForm">
+          <div class="form-group">
+            <input type="text" id="examNumber" placeholder="10桁の受験番号を入力してください" />
+            <div id="errorMessage" class="error-message"></div>
+          </div>
+          <button type="submit" id="checkButton">結果を確認</button>
+        </form>
+      </div>
+    </div>
+    <div id="celebrationScreen" class="celebration-screen">
+      <div class="cherry-blossoms"></div>
+      <div class="result-message">合格</div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
